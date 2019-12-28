@@ -1,5 +1,5 @@
 import React from "react";
-import {Tabs, Tab, Button, Grid } from "@material-ui/core";
+import {Tabs, Tab, Button, Grid, AppBar, makeStyles, Paper } from "@material-ui/core";
 
 export const NavBar = (props) => {
 
@@ -11,16 +11,23 @@ export const NavBar = (props) => {
     }
 
     return (
-        <Tabs
-            value={tabValue}
-            indicatorColor="primary"
-            textColor="primary"
-            onChange={handleChange}
-        >
-            <Tab value="Home" />
-            <Tab value="Notes" />
-            <Tab value="About" />
-            <Tab value="Projects" />
-        </Tabs>
-    );
+        <Paper square>
+            <Grid container row justify="center" xs={12}>
+                <Grid item justify="center">
+                    <Tabs
+                        value={tabValue}
+                        indicatorColor="primary"
+                        textColor="primary"
+                        onChange={handleChange}
+                        position="center"
+                    >
+                        <Tab label="Home" />
+                        <Tab label="Notes" />
+                        <Tab label="About" />
+                        <Tab label="Projects" />
+                    </Tabs>
+                </Grid>
+            </Grid>
+        </Paper>
+    );  
 }

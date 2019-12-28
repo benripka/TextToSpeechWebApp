@@ -18,6 +18,6 @@ export const Body = (props) => {
             {currentTab == 1 && <NotesPage />}
             {currentTab == 2 && <AboutPage />}
             {currentTab == 3 && <ProjectsPage />}
-        </Paper>
+        </Paper>    
     );
 }
