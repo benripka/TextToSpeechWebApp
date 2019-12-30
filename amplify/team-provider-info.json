@@ -1,0 +1,15 @@
+{
+    "backend": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-portfoliobackend-backend-02559-authRole",
+            "UnauthRoleArn": "arn:aws:iam::874953585278:role/amplify-portfoliobackend-backend-02559-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::874953585278:role/amplify-portfoliobackend-backend-02559-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-portfoliobackend-backend-02559-deployment",
+            "UnauthRoleName": "amplify-portfoliobackend-backend-02559-unauthRole",
+            "StackName": "amplify-portfoliobackend-backend-02559",
+            "StackId": "arn:aws:cloudformation:us-west-2:874953585278:stack/amplify-portfoliobackend-backend-02559/a38933e0-2ad5-11ea-8c44-06d54ad4c402",
+            "AmplifyAppId": "dtusjpaawv7nk"
+        }
+    }
+}
