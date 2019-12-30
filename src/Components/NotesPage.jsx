@@ -5,7 +5,7 @@ import axios from "axios";
 
 const useStyles = makeStyles({
     card: {
-      maxWidth: 1000,
+      maxWidth: 600,
     },
     media: {
       height: 300,
@@ -32,7 +32,7 @@ const MenuItem = (props) => {
                     title="photo"
                 />
                 <CardContent>
-                    <Typography variant="h4">
+                    <Typography variant="h5">
                         {name}
                     </Typography>
                     <Typography variant="body1">
@@ -43,6 +43,7 @@ const MenuItem = (props) => {
         </Card>
     )
 }
+
 
 export const NotesPage= (props) => {
     
@@ -61,48 +62,45 @@ export const NotesPage= (props) => {
     }, []);
 
     return (
-        <div>
-            <Grid container spacing={4} justify="center" direction="row">
-                <Grid xs={4} item>
-                    <Grid spacing={4} container justify="center" direction="column">
-                            <Grid item>
-                                <MenuItem name="Reinforcement Learning" image="https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15663/deep-dive-into-reinforcement-learning-2393e08aa800a4247f6066eee9ba0e8d.png"/>
-                            </Grid>
-                            <Grid item>
-                                <MenuItem name="Digital Logic" image="https://www.educationoncloud.in/wp-content/uploads/2017/11/Digital-Electronics-DE.jpg" />
-                            </Grid>             
-                    </Grid>
+        <div>   
+            <Grid container spacing={1}>
+                <Grid container item xs={12} justify="center" spacing={3}>
+                    <React.Fragment>
+                        <Grid item>
+                            <MenuItem name="Reinforcement Learning" image="https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15663/deep-dive-into-reinforcement-learning-2393e08aa800a4247f6066eee9ba0e8d.png"/>
+                        </Grid>
+                        <Grid item>
+                            <MenuItem name="Digital Logic" image="https://www.educationoncloud.in/wp-content/uploads/2017/11/Digital-Electronics-DE.jpg" />
+                        </Grid>  
+                    </React.Fragment>
                 </Grid>
-                <Grid xs={4} item>
-                    <Grid container spacing={4} justify="center" direction="column">
-                            <Grid item>
-                                <MenuItem name="Digital Electronics" image="https://compote.slate.com/images/f32a2c4b-3933-4feb-93cb-20750278d07c.jpg"/>
-                            </Grid>
-                            <Grid item>
-                                <MenuItem name="Operating Systems" image="https://media.geeksforgeeks.org/wp-content/uploads/os.png"/> 
-                            </Grid>          
-                    </Grid>
+                <Grid container item xs={12} justify="center" spacing={3}>
+                    <React.Fragment>
+                        <Grid item>
+                        <MenuItem name="Digital Electronics" image="https://compote.slate.com/images/f32a2c4b-3933-4feb-93cb-20750278d07c.jpg"/>
+
+                        </Grid>
+                        <Grid item>
+                        <MenuItem name="Operating Systems" image="https://media.geeksforgeeks.org/wp-content/uploads/os.png"/> 
+
+                        </Grid>  
+                    </React.Fragment>
                 </Grid>
-                <Grid xs={4} item>
-                    <Grid container spacing={4} justify="center" direction="column">
-                            <Grid item>
-                            <MenuItem name="Computer Interfacing" image="https://www.gdconf.com/sites/default/files/elctrobrain.jpeg" />
-                            </Grid>
-                            <Grid item>
-                            <MenuItem name="Software Design" image="https://miro.medium.com/max/820/1*W26o1ajbW7oc2BxLZm7_Aw.png"/>                 
-                            </Grid>              
-                    </Grid>
+                <Grid container item xs={12} justify="center" spacing={3}>
+                    <React.Fragment>
+                        <Grid item>
+                        <MenuItem name="Computer Interfacing" image="https://www.gdconf.com/sites/default/files/elctrobrain.jpeg" />
+                        </Grid>
+                        <Grid item>
+                        <MenuItem name="Software Design" image="https://miro.medium.com/max/820/1*W26o1ajbW7oc2BxLZm7_Aw.png"/>                 
+
+                        </Grid>  
+                    </React.Fragment>
                 </Grid>
             </Grid>
-            <Grid container justify="center" direction="row">
-                <Grid item xs={2}>
-
-                </Grid>
+            <Grid container justify="center">
                 <Grid item xs={8}>
                     <Markdown>{article}</Markdown>
-                </Grid>
-                <Grid item xs={2}>
-
                 </Grid>
             </Grid>
         </div>
