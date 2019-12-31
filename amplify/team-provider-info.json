@@ -10,6 +10,11 @@
             "StackName": "amplify-portfoliobackend-backend-02559",
             "StackId": "arn:aws:cloudformation:us-west-2:874953585278:stack/amplify-portfoliobackend-backend-02559/a38933e0-2ad5-11ea-8c44-06d54ad4c402",
             "AmplifyAppId": "dtusjpaawv7nk"
+        },
+        "categories": {
+            "auth": {
+                "portfoliobackendc1242b96": {}
+            }
         }
     }
 }
